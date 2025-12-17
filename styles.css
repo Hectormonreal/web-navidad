@@ -9,6 +9,7 @@ body {
     background: linear-gradient(to bottom right, #ff9ecb, #ffd6e8);
     color: #688372;
     padding: 20px;
+    background-image: url(img/fondo.jpg);
 }
 
 header {
