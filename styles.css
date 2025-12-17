@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ff9ecb, #ffd6e8);
+    color: #688372;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ff4d88;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.mensaje p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 15px;
+    background: #688372;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 0, 100, 0.2);
+}
+
+.galeria {
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 240px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.galeria p{
+    margin-top: 15px;
+    font-size: 1rem;
+}
+.corazon {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+.boton-carta {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #ff4d88;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(255,0,100,0.3);
+    transition: 0.3s;
+}
+
+.boton-carta:hover {
+    background: #ff1a66;
+}
+.carta-contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carta {
+    background:#feffff;
+    color: rgb(2, 60, 167);
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 100, 0.2);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.carta h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #688372;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu ul li a {
+    color:  #688372;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ffe6f0;
+    text-shadow: 0 0 5px white;
+}
+/* Fondo navideño */
+body {
+    background-size: cover;
+    background-image: url(/img/fondo.jpg);
+    color: #fff;
+}
+
+/* Ajustes para que el contenido no quede muy encima del header */
+header, section, footer {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Tono más claro para secciones */
+section.mensaje {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+/* Galería con tarjetas */
+.recuerdos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 90px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Tarjeta de cada foto */
+.foto-card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(10, 206, 212, 0.3);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+}
+
+.foto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen */
+.foto-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+/* Tarjeta */
+.foto-card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+}
+
+.foto-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Todas las imágenes del MISMO tamaño */
+.foto-card img {
+    width: 100%;
+    height: 320px;          /* 👈 tamaño fijo */
+    object-fit: cover;     /* recorta sin deformar */
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Texto debajo */
+.foto-card p {
+    font-size: 1rem; 
+    color: #000000;
+    font-style: italic;
+}
