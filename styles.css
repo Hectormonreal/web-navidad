@@ -130,7 +130,7 @@ footer {
 /* Fondo navideño */
 body {
     background-size: cover;
-    background-image: url(/img/fondo.jpg);
+    background-image: url(img/fondo.jpg);
     color: #fff;
 }
 
